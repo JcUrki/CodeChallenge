@@ -1,50 +1,57 @@
-
-
-
-
-
+function resultComp(){
+    let result = (Math.floor(Math.random() * 3));
+    if (result == 0){
+        result = "rock"
+    }else if(result == 1){
+        result = "paper"
+    }else{
+        result = "scissors"
+    }
+    return result
+}
+console.log(resultComp())
 
 
 function match() {
     switch (user) {
         case 'rock':
-            if(optionMachine === rock)
+            if(resultComp() === rock)
             {
                 alert("Tie!");
             }
-            else if(optionMachine === paper)
+            else if(resultComp() === paper)
             {
                 alert("You lost :( ");
             }
-            else if(optionMachine === scissors)
+            else if(resultComp() === scissors)
             {
                 alert("You win!");
             };
           break;
         case 'paper':
-            if(optionMachine === rock)
+            if(resultComp() === rock)
             {
                 alert("You win!");
             }
-            else if(optionMachine === paper)
+            else if(resultComp() === paper)
             {
                 alert("Tie!");
             }
-            else if(optionMachine === scissors)
+            else if(resultComp() === scissors)
             {
                 alert("You lost :( ");
             };
           break;
         case 'scissors':
-          if(optionMachine === rock)
+          if(resultComp() === rock)
             {
                 alert("You lost :( ");
             }
-            else if(optionMachine === paper)
+            else if(resultComp() === paper)
             {
                 alert("You win!");
             }
-            else if(optionMachine === scissors)
+            else if(resultComp() === scissors)
             {
                 alert("Tie!");
             };
@@ -55,3 +62,4 @@ function match() {
       }
       
     }
+

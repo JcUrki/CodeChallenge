@@ -34,3 +34,18 @@ h1{
     height: 10em;
     width: 10em;
 }
+li{
+    border: solid 0.2em;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em;
+}
+input{
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}

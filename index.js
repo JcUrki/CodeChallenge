@@ -5,15 +5,15 @@ function resultComp(){
     let result = (Math.floor(Math.random() * 3));
     if (result == 0){
         result = "rock";
-        document.getElementById('a').innerHTML='<img class="image" src="./img/rock.png" />'
+        document.getElementById('a').innerHTML='<img class="image" src="./img/rock.png" /> <input id="rock" type="button" value="rock"/>'
 
     }else if(result == 1){
         result = "paper"
-        document.getElementById('a').innerHTML='<img class="image" src="./img/paper.png" />'
+        document.getElementById('a').innerHTML='<img class="image" src="./img/paper.png" /> <input id="paper" type="button" value="paper"/>'
 
     }else{
         result = "scissors"
-        document.getElementById('a').innerHTML='<img class="image" src="./img/scissors.png" />'
+        document.getElementById('a').innerHTML='<img class="image" src="./img/scissors.png" /> <input id="rock" type="button" value="rock"/>'
     }
     return result
 }
